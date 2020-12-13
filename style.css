@@ -25,6 +25,7 @@ body {
 
 .container {
         width: 100vw;
+
 }
 
 header,
@@ -59,7 +60,7 @@ nav h2 {
 }
 
 .banner {
-        background-image: url("./Doux_Bakery/banner11.jpg");
+        background-image: url("./Doux_Bakery/yulian-karadzhov-UB8GI_kwkjk-unsplash.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -70,13 +71,6 @@ nav h2 {
 
 }
 
-/* .banner img{
-        width:100%;
-        object-fit: cover;
-        object-position:center;
-        overflow: hidden;
-}
- */
 
 section img {
         width: 100%;
