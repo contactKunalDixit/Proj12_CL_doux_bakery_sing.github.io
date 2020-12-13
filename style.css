@@ -1,9 +1,9 @@
 /*      Mobile First design 
 
-        Default width : 640 and below
-        Media Queries @ 640 and above 
-        Media Queries @ 768 and above 
-        Media Queries @ 
+        Default width : 640 and below:  Bar Menu stays
+        Media Queries @ 640 and above   Bar Menu goes and Logo & Navigation appears
+        Media Queries @ 768 and above Above and Instagram in a flex row
+        
 */
 @import url("./reset.css");
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
