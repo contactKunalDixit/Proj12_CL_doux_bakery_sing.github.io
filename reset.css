@@ -85,3 +85,11 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+
+/* To avoid unnecessary right and left movement on mobile browser */
+html,
+body {
+        width: auto !important;
+        overflow-x: hidden !important
+}
