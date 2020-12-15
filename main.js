@@ -1,22 +1,17 @@
 /**
- * bar button opens detailedNAV beyond 640px
- * Contacts: Facebook, Email, Insta API links
+ * bar button opens detailed NAV below 640px
  * Instagram API : Carousel
  */
 
+
+// ? Menu Switch works
 
 const barButton = document.querySelector(".fa-bars");
 const NavItemsMob = document.querySelector(".NavItems");
 let menuSwitch = 0;
 const NavMobStyle = NavItemsMob.style;
 
-
-
-
-
-
-
-let hamburger = () => {
+let hamburger = (e) => {
     if (!menuSwitch) {
         NavMobStyle.display = "block";
         menuSwitch++;
@@ -24,7 +19,12 @@ let hamburger = () => {
         NavMobStyle.display = "none";
         menuSwitch--;
     }
-    console.log("The click worked")
+
+    console.log(e)
 }
 
 barButton.addEventListener("click", hamburger);
+
+
+
+// ?    Instagram Carousel
