@@ -228,6 +228,7 @@ aside h3 {
         .ctc i {
                 margin-right: 1rem;
                 cursor: pointer;
+                color: rgba(0, 0, 0, 0.6);
         }
 
         .DesktopSpecial li {
