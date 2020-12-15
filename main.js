@@ -7,7 +7,7 @@
 
 const barButton = document.querySelector(".fa-bars");
 const NavItemsMob = document.querySelector(".NavItems");
-let switchOff = 0;
+let menuSwitch = 0;
 const NavMobStyle = NavItemsMob.style;
 
 
@@ -17,27 +17,14 @@ const NavMobStyle = NavItemsMob.style;
 
 
 let hamburger = () => {
-
-
-    if (!switchOff) {
-        NavMobStyle.display = "inline-block";
-        
-        // NavMobStyle.textalign = "center";
-        // NavItemsMob.display = "flex";
-        // NavItemsMob.flexdirection = "column";
-        // NavMobStyle.flexDirection = "column";
-        switchOff++;
+    if (!menuSwitch) {
+        NavMobStyle.display = "block";
+        menuSwitch++;
     } else {
         NavMobStyle.display = "none";
-        switchOff--;
-
+        menuSwitch--;
     }
-
-    // switchOff++;
-
-
-
+    console.log("The click worked")
 }
-/**Test */
+
 barButton.addEventListener("click", hamburger);
-barButton.addEventListener("click", () => console.log("Clicked"));
