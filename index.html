@@ -7,6 +7,7 @@
     <title>Doux Bakery</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css' />
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -37,9 +38,10 @@
                         <li><a href="#">Contact Us</a></li>
                     </ul>
                     <div class="ctc">
-                       <a href="https://example.com" target=_blank> <i class="fab fa-facebook-f"></i></a>
+                        <a href="https://example.com" target=_blank> <i class="fab fa-facebook-f"></i></a>
                         <a href="tel:+123456789"><i class="fas fa-phone-alt"></i></a>
-                        <a href="https://www.instagram.com/doux_bakery/tagged/?hl=en" target=_blank><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/doux_bakery/tagged/?hl=en" target=_blank><i
+                                class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </nav>
@@ -103,7 +105,45 @@
             <aside class="Carousel">
                 <h3>INSTAGRAM UPDATES</h3>
 
+
+
+
+
                 <!-- Image Carousel slider -->
+
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel">
+                        <!-- data-bg: The data attributes is used to store custom data private to the page or application. 
+    The data-* attributes gives us the ability to embed custom data attributes on all the HTML elements. In this example, It is being used to set the background of the image -->
+                        <div class="slide" data-bg="cb021c">
+                            <img src="./Doux_Bakery/Banner 3.jpeg" alt="InstagramPic1">
+
+                        </div>
+                        <div class="slide" data-bg="7E8F56">
+                            <img src="./Doux_Bakery/Banner 4.jpeg" alt="InstagramPic2">
+
+                        </div>
+                        <div class="slide" data-bg="F5F6F8">
+                            <img src="./Doux_Bakery/Pic9.png" alt="InstagramPic3">
+
+                        </div>
+                        <div class="slide" data-bg="FAA400">
+                            <img src="./Doux_Bakery/Pic5.png" alt="InstagramPic4">
+
+                        </div>
+                        <div class="slide" data-bg="E49C67">
+                            <img src="./Doux_Bakery/Pic10.png" alt="InstagramPic5">
+
+                        </div>
+                    </div>
+
+
+                    <button id="left" class="left-arrow arrow"><i class="fas fa-chevron-left"></i></button>
+                    <button id="right" class="right-arrow arrow"><i class="fas fa-chevron-right"></i></button>
+
+
+
+                </div>
             </aside>
         </main>
         <footer>
@@ -122,6 +162,7 @@
             </ul>
         </footer>
     </div>
+
     <script src="main.js" defer></script>
 </body>
 
