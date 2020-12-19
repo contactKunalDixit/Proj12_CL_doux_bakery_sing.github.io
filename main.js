@@ -29,37 +29,48 @@ barButton.addEventListener("click", hamburger);
 
 // ?    Instagram Carousel
 
-const slides = document.querySelectorAll(".slide");
-const carousel = document.getElementById("carousel");
+const imgContainer = document.getElementById('imgs');
+const prevBtn = document.getElementById('left');
+const nextBtn = document.getElementById('right');
 
-const left = document.getElementById("left");
-const right = document.getElementById("right");
+const imgArray = document.querySelectorAll('#imgs img');
 
-const SLIDES_COUNT = slides.length;
+let imgCount = 0;
 
-let current_slide = 0;
+let interval = setInterval(run, 3000);
 
-
-right.addEventListener("click", () => {
-    current_slide++;
-    if (current_slide > SLIDES_COUNT - 1) {
-        current_slide = 0;
-    }
-    updateCarousel();
-});
-
-
-left.addEventListener("click", () => {
-    current_slide--;
-    if (current_slide < 0) {
-        current_slide = SLIDES_COUNT - 1;
-    }
-    updateCarousel();
-});
-
-
-
-function updateCarousel() {
-    carousel.style.transform = `translateX(${-current_slide *slides[0].offsetWidth}px)`;
-
+function run() {
+  imgCount += 1;
+  imgChange();
 }
+
+function imgChange() {
+  if (imgCount > imgArray.length - 1) {
+    imgCount = 0;
+  } else if (imgCount < 0) {
+    imgCount = imgArray.length - 1;
+  }
+
+  imgContainer.style.transform = `translateX(${-imgCount * 200}px)`;
+}
+
+
+
+function resetInterval() {
+  clearInterval(interval);
+  interval = setInterval(run, 3000);
+}
+
+prevBtn.addEventListener('click', (e) => {
+  console.log(e);
+  imgCount -= 1;
+  imgChange();
+  resetInterval();
+});
+
+nextBtn.addEventListener('click', (e) => {
+  console.log(e);
+  imgCount += 1;
+  imgChange();
+  resetInterval();
+});
