@@ -51,7 +51,7 @@ function imgChange() {
     imgCount = imgArray.length - 1;
   }
 
-  imgContainer.style.transform = `translateX(${-imgCount * 200}px)`;
+  imgContainer.style.transform = `translateX(${-imgCount * 300}px)`;
 }
 
 

@@ -166,7 +166,7 @@ aside h3 {
 }
 
 img {
-  width: 400px;
+  width: 300px;
   height: 300px;
   object-fit: cover;
 }
@@ -178,7 +178,7 @@ img {
   height: 330px;
   /* 530 is 500+30 (30 here accounts for the height of the buttons)    */
 
-  width: 200px;
+  width: 300px;
   /* Same as width of the images */
 
   overflow: hidden;
