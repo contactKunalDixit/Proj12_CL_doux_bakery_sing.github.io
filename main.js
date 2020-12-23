@@ -3,29 +3,26 @@
  * Instagram API : Carousel
  */
 
-
 // ? Menu Switch works
 
-const barButton = document.querySelector(".fa-bars");
-const NavItemsMob = document.querySelector(".NavItems");
+const barButton = document.querySelector('.fa-bars');
+const NavItemsMob = document.querySelector('.NavItems');
 let menuSwitch = 0;
 const NavMobStyle = NavItemsMob.style;
 
-let hamburger = (e) => {
-    if (!menuSwitch) {
-        NavMobStyle.display = "block";
-        menuSwitch++;
-    } else {
-        NavMobStyle.display = "none";
-        menuSwitch--;
-    }
+const hamburger = (e) => {
+  if (!menuSwitch) {
+    NavMobStyle.display = 'block';
+    menuSwitch++;
+  } else {
+    NavMobStyle.display = 'none';
+    menuSwitch--;
+  }
 
-    console.log(e)
-}
+  console.log(e);
+};
 
-barButton.addEventListener("click", hamburger);
-
-
+barButton.addEventListener('click', hamburger);
 
 // ?    Instagram Carousel
 
@@ -53,8 +50,6 @@ function imgChange() {
 
   imgContainer.style.transform = `translateX(${-imgCount * 300}px)`;
 }
-
-
 
 function resetInterval() {
   clearInterval(interval);
