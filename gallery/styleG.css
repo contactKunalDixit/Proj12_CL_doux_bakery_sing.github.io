@@ -129,7 +129,7 @@ p {
 	padding: 0 0.4rem;
 }
 
-/* Create four equal columns that sits next to each other */
+/* Create four equal columns that sits next to each other in bigger screen*/
 .column {
 	flex: 100%;
 	max-width: 100%;
