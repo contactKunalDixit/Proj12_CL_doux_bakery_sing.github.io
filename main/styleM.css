@@ -5,7 +5,7 @@
         Media Queries @ 768 and above Above and Instagram in a flex row
         
 */
-@import url('./reset.css');
+@import url('../reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
 
 html,
@@ -79,7 +79,7 @@ nav h2 {
 }
 
 .banner {
-	background-image: url('./Doux_Bakery/yulian-karadzhov-UB8GI_kwkjk-unsplash.jpg');
+	background-image: url('../Doux_Bakery/yulian-karadzhov-UB8GI_kwkjk-unsplash.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
