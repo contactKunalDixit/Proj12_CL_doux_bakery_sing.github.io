@@ -137,6 +137,22 @@ fieldset .Names {
 	padding: 0.5rem 1rem;
 }
 
+footer {
+	border-style: none;
+	border-top-style: solid;
+	border-width: 0.04rem;
+	border-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer li {
+	margin-bottom: 0.5rem;
+}
+
 /* CAROUSEL SETTINGS */
 
 .Carousel-Main {
