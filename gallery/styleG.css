@@ -142,8 +142,6 @@ p {
 	vertical-align: middle;
 }
 
-/*  Responsive layout - makes a two column-layout instead of four columns  */
-
 footer {
 	border-style: none;
 	border-top-style: solid;
@@ -159,6 +157,8 @@ footer ul {
 footer li {
 	margin-bottom: 0.5rem;
 }
+
+/*  Responsive layout - makes a two column-layout instead of four columns  */
 
 /* MEDIA QUERY SETTINGS */
 
